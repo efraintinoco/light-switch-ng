@@ -1,0 +1,3 @@
+<div *ngIf="showOff && showOffText"> The Light is Off<img src="assets/OFFbulb.jpg" alt="off-bulb"></div>
+<div *ngIf="showLight && showLightText"> The Light is On<img src="assets/ONbulb.jpg" alt="on-bulb"></div>
+<button (click)="toggleText()" (click)="toggleLight()">Turn on/off</button>
