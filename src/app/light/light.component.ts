@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-
+import { Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-light',
@@ -7,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./light.component.css']
 })
 export class LightComponent{
+
+@Input() showLight!:boolean
+@Input() showLightText!: boolean
 
 }

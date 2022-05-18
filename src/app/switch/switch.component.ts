@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter} from '@angular/core';
+
 
 @Component({
   selector: 'app-switch',
@@ -6,6 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./switch.component.css']
 })
 export class SwitchComponent {
+  @Output() switchLight = new EventEmitter()
 
+  handleClick() {
+    this.switchLight.emit()
+  }
 
 }

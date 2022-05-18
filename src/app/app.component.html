@@ -1,6 +1,12 @@
-<div *ngIf="showOff"><img src="assets/OFFbulb.jpg" alt="off-bulb"></div>
-<p *ngIf="showOffText">The light is off !</p>
-
-<div *ngIf="showLight"><img src="assets/ONbulb.jpg" alt="on-bulb"></div>
-<p *ngIf="showLightText">The light is on !</p>
-<button (click)="toggleText()" (click)="toggleLight()">Turn on/off</button>
+<app-night-light
+  [showOff]="showOff"
+  [showOffText]="showOffText"
+  ></app-night-light>
+<app-light
+  [showLight]="showLight"
+  [showLightText]="showLightText"
+></app-light>
+<app-switch
+  (switchLight)="toggleLight()"
+  (switchLight)="toggleText()">
+</app-switch>

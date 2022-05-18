@@ -7,18 +7,17 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
 
-  showLight:boolean = false
-  showOff: boolean = true
-  showLightText: boolean = false
-  showOffText:boolean = true
+  showLight = false
+  showOff = true
+  showLightText = false
+  showOffText = true
 
   toggleLight() {
-    this.showLight = !this.showLight;
+  this.showLight = !this.showLight;
     this.showOff = !this.showOff
   }
   toggleText() {
     this.showLightText = !this.showLightText
     this.showOffText = !this.showLightText
   }
-
 }

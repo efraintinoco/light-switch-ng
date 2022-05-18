@@ -1,17 +1,13 @@
-import { Component, OnInit,   } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-night-light',
   templateUrl: './night-light.component.html',
   styleUrls: ['./night-light.component.css']
 })
-export class NightLightComponent implements OnInit {
- 
+export class NightLightComponent {
 
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+@Input() showOff!:boolean
+@Input() showOffText!:boolean
 
 }
